@@ -17,15 +17,19 @@ void getChoices(float& A, float& B) {
 	// The rest of this function is an exercise to the reader
 }
 void firstChoice(float A, float B) {
+	cout << "\n" << A << " + " << B << " = " << A+B << endl;
 	
 }
 void secondChoice(float A, float B) {
+	cout << "\n" << A << " - " << B << " = " << A-B << endl;
 	
 }
 void thirdChoice(float A, float B) {
+	cout << "\n" << A << " * " << B << " = " << A*B << endl;
 
 }
 void fourthChoice(float A, float B) {
+	cout << "\n" << A << " / " << B << " = " << A/B << endl;
 
 }
 int main() {
@@ -38,27 +42,18 @@ int main() {
 	if (choice == 1) {
 		firstChoice(A, B);
 
-		X = A + B;
-		cout <<"\n" << A << " + " <<  B << " = " << X << endl;
 	}
 	if (choice == 2) {
 		secondChoice(A, B);
-
-		X = A - B;
-		cout << "\n" << A << " - " << B << " = " << X << endl;
 
 	}
 	if (choice == 3) {
 		thirdChoice(A, B);
 
-		X = A * B;
-		cout << "\n" << A << " * " << B << " = " << X << endl;
 	}
 	if (choice == 4) {
 		fourthChoice(A, B);
 
-		X = A / B;
-		cout << "\n" << A << " / " << B << " = " << X << endl;
 	}
 	return 0;
 }
